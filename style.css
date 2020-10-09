@@ -67,6 +67,7 @@ li {
     border-radius: 6px;
     color: #3D5AFE;
     background-color: white;
+    border: none;
 }
 
 .buttonVariantText:hover {
@@ -84,7 +85,7 @@ li {
     border-radius: 6px;
     color: #FFFFFF;
     background: #3D5AFE;
-    border-radius: 6px;
+    border: none;
 }
 
 .buttonDisable {
@@ -94,12 +95,177 @@ li {
     padding-block-start: 8px;
     border-radius: 6px;
     color: #9E9E9E;
-    background: #E0E0E0;
+    background-color: #E0E0E0;
+    border: none;
 }
 
 .variantTextDisable {
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #9E9E9E;
+    background-color: #ffffff;
+    border: none;
+    
+}
+
+.startIcon {
+    background-image: url('./images/stroller.svg');
+    background-repeat: no-repeat;
+    background-position: 10%;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #9E9E9E;
+    padding-inline-start: 40px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #2962FF;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+    border: none;
+}
+
+.endIcon {
+    background-image: url('./images/stroller.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-end: 40px;
+    padding-inline-start: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    fill: #ffff;
+    color: #FFFFFF;
+    background-color: #2962FF;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+    border: none;
+}
+
+.btnSizeSm {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 12px;
+    padding-inline-end: 12px;
+    padding-block-end: 6px;
+    padding-block-start: 6px;
+    border-radius: 6px;
+    fill: #ffff;
+    color: #FFFFFF;
+    background-color: #3D5AFE;
+    border: none;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+}
+
+.btnSizeMd {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #3D5AFE;
+    border: none;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+}
+
+.btnSizelg {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 22px;
+    padding-inline-end: 22px;
+    padding-block-end: 11px;
+    padding-block-start: 11px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #3D5AFE;
+    border: none;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+}
+
+.colorDefault {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #3F3F3F;
+    background-color: #E0E0E0;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border: none;
+}
+
+.colorDefault:hover {
+    background-color: #AEAEAE;
+}
+
+.colorPrimary {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #2962FF;
+    box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+    border: none;
+}
+
+.colorPrimary:hover {
+    background-color: #0039CB;
+}
+
+.colorSecondary {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #ffffff;
+    background: #455A64;
+    box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+    border: none;
+}
+
+.colorSecondary:hover {
+    background-color: #1C313A;
+}
+
+.colorDanger {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background: #D32F2F;
+    box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+    border: none;
+}
+
+.colorDanger:hover {
+    background-color: #9A0007;
 }
