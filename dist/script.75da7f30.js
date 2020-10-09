@@ -28298,24 +28298,11 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Buttons(props) {
-  var btn1 = {
-    backgroundColor: "#E0E0E0",
-    paddingRight: "16px",
-    paddingLeft: "16px",
-    paddingBottom: "8px",
-    paddingTop: "8px",
-    borderRadius: "6px",
-    fontSize: "14px",
-    lineHeight: "20px",
-    textAlign: "center",
-    color: "#3F3F3F",
-    border: "none"
-  };
-  return /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("p", null, "Button"), /*#__PURE__*/_react.default.createElement("button", {
-    style: btn1
-  }, "Default")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("button", {
-    style: {}
-  }, "Default")));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {
+    className: "p"
+  }, props.button.type), /*#__PURE__*/_react.default.createElement("button", {
+    className: "button"
+  }, props.button.textContent));
 }
 
 var _default = Buttons;
@@ -28342,7 +28329,62 @@ function App() {
     style: h1Style
   }, /*#__PURE__*/_react.default.createElement("h1", {
     style: h1Style
-  }, "Buttons"), /*#__PURE__*/_react.default.createElement(_Buttons.default, null));
+  }, "Buttons"), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "<button />",
+      textContent: "Default",
+      className: "button"
+    }
+  }), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "$:hover, $:focus",
+      textContent: "Default",
+      className: "button"
+    }
+  }), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "<button variant: outline/>",
+      textContent: "Default",
+      className: "buttonVariantOuline"
+    }
+  }), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "$:hover, $:focus",
+      textContent: "Default",
+      className: "buttonVariantOuline"
+    }
+  }), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "<button variant: text />",
+      textContent: "Default",
+      className: "buttonVariantText"
+    }
+  }), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "$:hover, $:focus",
+      textContent: "Default",
+      className: "buttonVariantText"
+    }
+  }), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "<button disableShadow/>",
+      textContent: "Default",
+      className: "buttonDesableShadow"
+    }
+  }), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+    const: true,
+    button: {
+      type: "$:hover, $:focus",
+      name: "Default"
+    }
+  }));
 }
 
 var _default = App;
@@ -28387,7 +28429,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63738" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55185" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

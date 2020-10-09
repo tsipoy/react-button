@@ -14,6 +14,92 @@ li {
     list-style: none;
 }
 
-.btn1Hover:hover {
+.button {
+    background-color: #E0E0E0;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #3F3F3F;
+    border: none
+}
+
+.button:hover {
     background-color: #AEAEAE;
+}
+
+.p {
+    font-size: 12px;
+    line-height: 12px;
+    color: #333333;
+}
+
+.buttonVariantOuline {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #3D5AFE;
+    border: 1px solid #3D5AFE;
+    background-color: white;
+}
+
+.buttonVariantOuline:hover {
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.buttonVariantText {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #3D5AFE;
+    background-color: white;
+}
+
+.buttonVariantText:hover {
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.buttonDesableShadow {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background: #3D5AFE;
+    border-radius: 6px;
+}
+
+.buttonDisable {
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    border-radius: 6px;
+    color: #9E9E9E;
+    background: #E0E0E0;
+}
+
+.variantTextDesable {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #9E9E9E;
 }
