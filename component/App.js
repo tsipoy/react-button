@@ -9,58 +9,73 @@ function App() {
         <main style={h1Style}>
             <h1 style={h1Style}>Buttons</h1>
             <Buttons
-                const button = {{
+                const buttons = {{
                     type: "<button />",
                     textContent: "Default",
                     className: "button",
                 }}
             />
             <Buttons 
-                const button = {{
+                const buttons = {{
                     type: "$:hover, $:focus",
                     textContent: "Default",
                     className: "button"
                 }}
             />
             <Buttons
-                const button = {{
+                const buttons = {{
                     type: "<button variant: outline/>",
                     textContent: "Default",
                     className: "buttonVariantOuline",
                 }}
             />
             <Buttons
-                const button = {{
+                const buttons = {{
                     type: "$:hover, $:focus",
                     textContent: "Default",
                     className: "buttonVariantOuline",
                 }}
             />
             <Buttons
-                const button = {{
+                const buttons = {{
                     type: "<button variant: text />",
                     textContent: "Default",
                     className: "buttonVariantText"
                 }}
             />
             <Buttons
-                const button = {{
+                const buttons = {{
                     type: "$:hover, $:focus",
                     textContent: "Default",
                     className: "buttonVariantText"
                 }}
             />
             <Buttons
-                const button = {{
+                const buttons = {{
                     type: "<button disableShadow/>",
                     textContent: "Default",
                     className: "buttonDesableShadow"
                 }}
             />
             <Buttons
-                const button = {{
-                    type: "$:hover, $:focus",
+                const buttons = {{
+                    type: "<button disable/>",
                     name: "Default",
+                    className: "buttonDisable",
+                }}
+            />
+            <Buttons
+                const buttons = {{
+                    type: "",
+                    name: "Default",
+                    className: "",
+                }}
+            />
+            <Buttons
+                const buttons = {{
+                    type: "",
+                    name: "Default",
+                    className: "",
                 }}
             />
         </main>

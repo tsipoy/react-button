@@ -4,8 +4,8 @@ import React from "react";
 function Buttons(props) {
     return (
         <div>
-            <p className= "p">{props.button.type}</p>
-            <button className= "button">{props.button.textContent}</button>
+            <p className= "p">{props.buttons.type}</p>
+            <button className={props.buttons.className}>{props.buttons.textContent}</button>
         </div>
     )
 }
