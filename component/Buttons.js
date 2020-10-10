@@ -4,62 +4,64 @@ function Buttons(props) {
     let buttonStyle;
         if(props.variant == "default") {
             buttonStyle = "button";
-        }
-
-        if(props.variant == "outline") {
+        } else if(props.variant == "outline") {
             buttonStyle = "buttonVariantOuline";
-        }
-
-        if(props.variant == "text") {
-            buttonStyle = "buttonVariantText"
-        }
-
-        if(props.variant == "disableShadow") {
+        } 
+        
+        else if(props.variant == "text") {
+            buttonStyle = "buttonVariantText";
+        } 
+        
+        else if(props.variant == "disableShadow") {
             buttonStyle = "buttonDesableShadow";
-        }
-
-        if(props.variant == "disable") {
-            buttonStyle = "buttonDisable"
-        }
-
-        if(props.variant == "textDisable") {
-            buttonStyle = "variantTextDisable"
-        }
-
-        if(props.variant == "startIcon") {
+        } 
+        
+        else if(props.variant == "disable") {
+            buttonStyle = "buttonDisable";
+        } 
+        
+        else if(props.variant == "textDisable") {
+            buttonStyle = "variantTextDisable";
+        } 
+        
+        else if(props.variant == "startIcon") {
             buttonStyle = "startIcon"
         }
 
-        if(props.variant == "endIcon") {
+        else if(props.variant == "endIcon") {
             buttonStyle = "endIcon"
         }
 
-        if(props.size == "sm") {
+        else if(props.size == "sm") {
             buttonStyle = "btnSizeSm"
         }
 
-        if(props.size == "md") {
+        else if(props.size == "md") {
             buttonStyle = "btnSizeMd"
         }
 
-        if(props.size == "lg") {
+        else if(props.size == "lg") {
             buttonStyle = "btnSizelg"
         }
 
-        if(props.color == "default") {
+        else if(props.color == "default") {
             buttonStyle = "colorDefault"
         }
 
-        if(props.color == "primary") {
+        else if(props.color == "primary") {
             buttonStyle = "colorPrimary"
         }
 
-        if(props.color == "secondary") {
+        else if(props.color == "secondary") {
             buttonStyle = "colorSecondary"
         }
 
-        if(props.color == "danger") {
-            buttonStyle = "colorDanger"
+        else if(props.color == "danger") {
+            buttonStyle = "colorDanger lastBtn"
+        }
+
+        else {
+            buttonStyle = "buttonVariantOuline";
         }
     return (
         <div>
